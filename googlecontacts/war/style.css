@@ -1,0 +1,77 @@
+/** Add css rules here for your application. */
+.root {
+  background-color: white;
+}
+
+.panelLogin {
+  color: black;
+  background-color: white;
+  height: 23px;
+  width: 100%;
+  padding: 3px 10px 0px 0px;
+}
+
+.linkLogin {
+  text-align: right;
+}
+
+.panelTop {  
+  border-top: 1px solid #C9D7F1;
+  padding: 5px 0 0 20px;
+}
+
+.tabPanel {  
+  margin: 20px 20px 20px 20px;
+}
+
+.panelMain2 {
+  margin: 20px 20px 20px 20px;
+}
+
+.panelButtons {
+  margin: 20px 0 0 0;
+}
+
+.labelMainTitle {
+  font-size: x-large;
+  padding: 10px;
+}
+
+.contactsGrid {
+  margin: 0px 20px 20px 20px;
+}
+
+.labelTitle {
+  font-size: larger;
+  font-weight: bold;
+}
+
+.labelMargin {
+  margin: 0px 5px 0px 10px;
+}
+
+.labelBold {
+  font-weight: bold;
+  margin: 0px 5px 0px 0px;
+}
+
+.labelEmail {
+  color: DarkBlue;
+  margin: 0px 5px 0px 10px;
+}
+
+.labelLight {
+  color: DimGray;
+  margin: 0px 0px 0px 5px;
+}
+
+.gwt-TextArea {
+  height: 100px;
+  width: 300px;
+}
+
+.gwt-TextArea-readonly { 
+  height: 100px;
+  width: 300px;
+  color: Black;
+}
