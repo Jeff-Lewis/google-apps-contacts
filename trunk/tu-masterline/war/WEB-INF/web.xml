@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE web-app
+    PUBLIC "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+    "http://java.sun.com/dtd/web-app_2_3.dtd">
+
+<web-app>
+  
+  <!-- Servlets -->
+  <servlet>
+    <servlet-name>contacts</servlet-name>
+    <servlet-class>nl.miraclebenelux.domaincontacts.server.ContactServiceImpl</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>contacts</servlet-name>
+    <url-pattern>/domain_contacts/contacts</url-pattern>
+  </servlet-mapping>
+  
+  	<servlet>
+		<servlet-name>SyncJob</servlet-name>
+		<servlet-class>nl.miraclebenelux.domaincontacts.server.SyncJob</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>SyncJob</servlet-name>
+		<url-pattern>/syncjob</url-pattern>
+	</servlet-mapping>
+	
+	  	<servlet>
+		<servlet-name>LoginServlet</servlet-name>
+		<servlet-class>nl.miraclebenelux.domaincontacts.server.LoginServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>LoginServlet</servlet-name>
+		<url-pattern>/LoginServlet</url-pattern>
+	</servlet-mapping>
+  
+
+    <servlet>
+        <servlet-name>HandleTokenServlet</servlet-name>
+        <servlet-class>nl.miraclebenelux.domaincontacts.server.HandleTokenServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>HandleTokenServlet</servlet-name>
+        <url-pattern>/HandleTokenServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>RetrieveFeedServlet</servlet-name>
+        <servlet-class>nl.miraclebenelux.domaincontacts.server.RetrieveFeedServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>RetrieveFeedServlet</servlet-name>
+        <url-pattern>/RetrieveFeedServlet</url-pattern>
+    </servlet-mapping>
+  
+  <!-- Default page to serve -->
+  <welcome-file-list>
+   <welcome-file>index.jsp</welcome-file>
+    <welcome-file>Domain_Contacts.html</welcome-file>
+  </welcome-file-list>
+
+</web-app>
