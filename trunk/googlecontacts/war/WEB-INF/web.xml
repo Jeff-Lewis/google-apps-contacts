@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE web-app
+    PUBLIC "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+    "http://java.sun.com/dtd/web-app_2_3.dtd">
+
+<web-app>
+
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+  </welcome-file-list>
+  
+  <!-- Servlets -->
+  <servlet>
+    <servlet-name>GwtBackEndService</servlet-name>
+    <servlet-class>com.google.apps.domaincontactsmanager.server.BackendServiceImpl</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>GwtBackEndService</servlet-name>
+    <url-pattern>/domaincontactsmanager/BackendService</url-pattern>
+  </servlet-mapping>
+
+</web-app>
